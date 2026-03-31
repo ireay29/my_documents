@@ -1,0 +1,2283 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../references/www.aimagicx.com_blog_openclaw-alternatives-comparison-2026/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>OpenClaw エコシステム 類似OSSプロダクト調査レポート - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#openclaw-oss" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OpenClaw エコシステム 類似OSSプロダクト調査レポート
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crowdfunding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Crowdfunding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/crowdfunding_guide_pet_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ペット向けスマートトイレ×健康管理アプリ クラウドファンディング立ち上げガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent prompt
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agent prompt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/agent_prompt/cf_mentor_agent_prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功メンターAgent システムプロンプト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/agent_prompt/cf_mentor_agent_prompt_en/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Prompt: Crowdfunding Success Mentor Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/research/crowdfunding_comprehensive_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功の法則：完全保存版ガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/research/crowdfunding_success_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功事例と初心者向け成功のポイント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistics research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Logistics research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logistics_research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物流・運送業界 企業リサーチ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Openclaw research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Openclaw research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw エコシステム 調査資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/github.com_htlin222_mini-claw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - htlin222/mini-claw: minimalism alternative of OpenClaw · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/github.com_memovai_mimiclaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - memovai/mimiclaw: MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS. · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/github.com_openclaw_openclaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - openclaw/openclaw: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/github.com_rohitg00_awesome-openclaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - rohitg00/awesome-openclaw · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/itsfoss.com_openclaw-alternatives_/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw Alternatives That You Can Run on Raspberry Pi Like Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/www.aimagicx.com_blog_openclaw-alternatives-comparison-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw Alternatives: NanoClaw, ZeroClaw, Moltis, and Every Competitor Compared (2026) | AI Magicx Blog | AI Magicx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reports
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw エコシステム 類似OSSプロダクト調査レポート
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw エコシステム 類似OSSプロダクト調査レポート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-openclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. OpenClaw とは
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. OpenClaw とは">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        名称変遷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本情報
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コアアーキテクチャ（6レイヤー）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-oss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 類似・派生OSSプロダクト 一覧
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 類似・派生OSSプロダクト 一覧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要プロダクト比較表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 各プロダクト詳細
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 各プロダクト詳細">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nanoclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NanoClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeroclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ZeroClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moltis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moltis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PicoClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nanobot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nanobot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tinyclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TinyClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mimiclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MimiClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        zclaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-clawminiclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mini-Claw（MiniClaw）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 超軽量・組み込みハードウェア対応プロダクト
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 超軽量・組み込みハードウェア対応プロダクト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マイコン（ESP32）で動くもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sbcraspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SBC（Raspberry Pi クラス）で動くもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-m5stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. M5Stack での動作可否
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. M5Stack での動作可否">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mimiclaw-zclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MimiClaw / zclaw の動作要件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m5stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M5Stack 主要機種との対応表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 用途別選択ガイド
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 参考リソース
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-openclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. OpenClaw とは
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. OpenClaw とは">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        名称変遷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本情報
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コアアーキテクチャ（6レイヤー）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-oss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 類似・派生OSSプロダクト 一覧
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 類似・派生OSSプロダクト 一覧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要プロダクト比較表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 各プロダクト詳細
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 各プロダクト詳細">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nanoclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NanoClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeroclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ZeroClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moltis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moltis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PicoClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nanobot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nanobot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tinyclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TinyClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mimiclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MimiClaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        zclaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-clawminiclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mini-Claw（MiniClaw）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 超軽量・組み込みハードウェア対応プロダクト
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 超軽量・組み込みハードウェア対応プロダクト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マイコン（ESP32）で動くもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sbcraspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SBC（Raspberry Pi クラス）で動くもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-m5stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. M5Stack での動作可否
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. M5Stack での動作可否">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mimiclaw-zclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MimiClaw / zclaw の動作要件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m5stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M5Stack 主要機種との対応表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 用途別選択ガイド
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 参考リソース
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="openclaw-oss">OpenClaw エコシステム 類似OSSプロダクト調査レポート</h1>
+<blockquote>
+<p>調査日: 2026年3月25日</p>
+</blockquote>
+<hr />
+<h2 id="1-openclaw">1. OpenClaw とは</h2>
+<p><strong>OpenClaw</strong>（旧称: Clawdbot → Moltbot）は、Peter Steinberger（PSPDFKit創業者）が2025年11月に個人プロジェクトとして開発を開始した、セルフホスト型のオープンソースAIエージェントフレームワーク。2026年1月30日に最終的に「OpenClaw」へリブランドされ、GitHub上で爆発的な成長を遂げた（現在 <strong>324,000+ スター</strong>、GitHubの歴史上最速クラスの成長）。</p>
+<p><strong>コアコンセプト</strong>: 自分のハードウェア上で動作し、WhatsApp・Telegram・Slack・Discord等、すでに使っているチャットアプリを通じてAIエージェントを操作する。</p>
+<h3 id="_1">名称変遷</h3>
+<table>
+<thead>
+<tr>
+<th>日付</th>
+<th>名称</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年11月</td>
+<td><strong>Clawdbot</strong></td>
+<td>初期リリース名</td>
+</tr>
+<tr>
+<td>2026年1月27日</td>
+<td><strong>Moltbot</strong></td>
+<td>Anthropic商標クレーム（"Claude"との類似）によりリブランド</td>
+</tr>
+<tr>
+<td>2026年1月30日</td>
+<td><strong>OpenClaw</strong></td>
+<td>最終リブランド、コミュニティ投票で決定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">基本情報</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a></td>
+</tr>
+<tr>
+<td>スター数</td>
+<td>324,000+</td>
+</tr>
+<tr>
+<td>言語</td>
+<td>TypeScript (Node.js 22+)</td>
+</tr>
+<tr>
+<td>ライセンス</td>
+<td>MIT</td>
+</tr>
+<tr>
+<td>対応チャンネル</td>
+<td>WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Google Chat, Teams, Matrix, LINE, Feishu 等20+</td>
+</tr>
+<tr>
+<td>スキルマーケット</td>
+<td>ClawHub（13,700+ AgentSkills）</td>
+</tr>
+<tr>
+<td>主な特徴</td>
+<td>SOUL.md によるエージェント設定、ブラウザ自動化、cron、マルチエージェント、音声対応</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6">コアアーキテクチャ（6レイヤー）</h3>
+<table>
+<thead>
+<tr>
+<th>レイヤー</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gateway</strong></td>
+<td>中央コントロールプレーン — メッセージルーティング、セッション、プラグイン、ツール実行ポリシー</td>
+</tr>
+<tr>
+<td><strong>Channels</strong></td>
+<td>Telegram/WhatsApp/Discord/iMessage 等を標準メッセージ形式に正規化するアダプタ</td>
+</tr>
+<tr>
+<td><strong>Routing + Sessions</strong></td>
+<td>どのエージェントが特定の会話を処理するかを決定</td>
+</tr>
+<tr>
+<td><strong>Agent Runtime</strong></td>
+<td>コンテキスト処理、モデルプロバイダ呼び出し、レスポンスストリーミング、ツールリクエスト</td>
+</tr>
+<tr>
+<td><strong>Tools</strong></td>
+<td>機能群 — Webフェッチ、ブラウザ制御、コマンド実行、デバイスペアリング</td>
+</tr>
+<tr>
+<td><strong>Surfaces</strong></td>
+<td>インタラクションポイント — チャットアプリ、Webダッシュボード、macOSメニューバー、Live Canvas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-oss">2. 類似・派生OSSプロダクト 一覧</h2>
+<p>OpenClawが公開されてから約6週間で、多数の類似プロダクトが誕生した。それぞれが OpenClaw の異なる弱点（セキュリティ・パフォーマンス・コスト・複雑さ）を攻略点としている。</p>
+<h3 id="_3">主要プロダクト比較表</h3>
+<table>
+<thead>
+<tr>
+<th>プロダクト</th>
+<th>スター数</th>
+<th>言語</th>
+<th>バイナリサイズ</th>
+<th>RAM使用量</th>
+<th>起動時間</th>
+<th>主な差別化ポイント</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OpenClaw</strong></td>
+<td>~324K</td>
+<td>TypeScript</td>
+<td>~200MB+</td>
+<td>数百MB</td>
+<td>数秒</td>
+<td>最大エコシステム、13,700+スキル</td>
+</tr>
+<tr>
+<td><strong>NanoClaw</strong></td>
+<td>~21,500</td>
+<td>TypeScript</td>
+<td>小（コンテナ化）</td>
+<td>可変</td>
+<td>中程度</td>
+<td>700行、必須コンテナ隔離、監査ログ</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>~26,200</td>
+<td>Rust</td>
+<td>3.4MB</td>
+<td>&lt;5MB</td>
+<td>&lt;10ms</td>
+<td>$10ハードウェアで動作、22+LLMプロバイダ</td>
+</tr>
+<tr>
+<td><strong>Moltis</strong></td>
+<td>~2,000</td>
+<td>Rust</td>
+<td>単一バイナリ</td>
+<td>中程度</td>
+<td>高速</td>
+<td>150K行・unsafe 0、音声I/O、Prometheus対応</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>~13,300</td>
+<td>Go</td>
+<td>単一バイナリ</td>
+<td>&lt;10MB</td>
+<td>1秒</td>
+<td>$10 RISC-Vボードで動作、1日で開発</td>
+</tr>
+<tr>
+<td><strong>Nanobot</strong></td>
+<td>~26,800</td>
+<td>Python</td>
+<td>N/A</td>
+<td>~45MB</td>
+<td>中程度</td>
+<td>4,000行、香港大学発、MCP-native</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td>少数</td>
+<td>Zig</td>
+<td>678KB</td>
+<td>~1MB</td>
+<td>&lt;2ms</td>
+<td>究極のミニマリズム</td>
+</tr>
+<tr>
+<td><strong>MicroClaw</strong></td>
+<td>少数</td>
+<td>Rust</td>
+<td>単一バイナリ</td>
+<td>低</td>
+<td>高速</td>
+<td>14+プラットフォームアダプタ（Feishu, DingTalk, QQ等）</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>~1,300</td>
+<td>Rust</td>
+<td>WASMモジュール</td>
+<td>低</td>
+<td>高速</td>
+<td>WASM+暗号検証、NEAR AI製</td>
+</tr>
+<tr>
+<td><strong>TinyClaw</strong></td>
+<td>~1,300</td>
+<td>Shell</td>
+<td>~400行</td>
+<td>低</td>
+<td>高速</td>
+<td>Claude Code + tmux、自己修復、WhatsApp対応</td>
+</tr>
+<tr>
+<td><strong>MimiClaw</strong></td>
+<td>~4,600</td>
+<td>C</td>
+<td>N/A</td>
+<td>極小</td>
+<td>即時</td>
+<td>$5 ESP32-S3チップで動作、純粋C言語</td>
+</tr>
+<tr>
+<td><strong>zclaw</strong></td>
+<td>少数</td>
+<td>C</td>
+<td>888KB以下</td>
+<td>極小</td>
+<td>即時</td>
+<td>ESP32マイコン向け、暗号化クレデンシャル保存</td>
+</tr>
+<tr>
+<td><strong>Autobot</strong></td>
+<td>少数</td>
+<td>Crystal</td>
+<td>2MB</td>
+<td>~5MB</td>
+<td>&lt;10ms</td>
+<td>カーネルレベルサンドボックス</td>
+</tr>
+<tr>
+<td><strong>Mini-Claw</strong></td>
+<td>~72</td>
+<td>TypeScript</td>
+<td>N/A</td>
+<td>低</td>
+<td>高速</td>
+<td>API費用ゼロ（Claude Pro/Max or ChatGPT Plus直接利用）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. 各プロダクト詳細</h2>
+<h3 id="nanoclaw">NanoClaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/qwibitai/nanoclaw">qwibitai/nanoclaw</a></p>
+<p>OpenClaw の翌日（2026/1/31）にリリース。「500,000行のコードは誰も監査できない」という問題意識から、<strong>わずか700行のTypeScript</strong>で同等機能を実現。Anthropic Agents SDK ベースで、全エージェントが Apple Containers（macOS）または Docker（Linux）内で動作し、コンテナ脱出不可能なアーキテクチャ。VentureBeat に「OpenClaw のコンテナ隔離問題を解決した」として取り上げられた。</p>
+<p><strong>主な特徴:</strong>
+- 必須コンテナ隔離（Apple Containers / Docker）
+- 全ファイルシステム操作・ネットワークリクエストに明示的承認が必要
+- 組み込み監査ログ（タイムスタンプ・入出力ペイロード・権限決定を記録）
+- エージェントスウォーム（複数エージェントの協調）をエコシステム初で実装</p>
+<h3 id="zeroclaw">ZeroClaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/zeroclaw-labs/zeroclaw">zeroclaw-labs/zeroclaw</a></p>
+<p>Harvard・MIT学生とSundai.Clubコミュニティが開発。<strong>Rustで書かれた3.4MBの単一バイナリ</strong>が10ms以内に起動し、RAM使用量は5MB以下。$10のシングルボードコンピュータで動作可能。</p>
+<p><strong>動作モード:</strong>
+- <strong>Agent mode（CLI）</strong>: 単一エージェントをCLIから実行
+- <strong>Gateway mode（HTTP）</strong>: エージェントをHTTPエンドポイントとして公開
+- <strong>Daemon mode</strong>: フルプロダクション展開（24/7稼働）</p>
+<p><strong>パフォーマンス比較:</strong></p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>OpenClaw</th>
+<th>ZeroClaw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>バイナリサイズ</td>
+<td>~200MB+</td>
+<td>3.4MB</td>
+</tr>
+<tr>
+<td>起動時間</td>
+<td>数秒</td>
+<td>&lt;10ms</td>
+</tr>
+<tr>
+<td>RAM使用量</td>
+<td>数百MB</td>
+<td>&lt;5MB</td>
+</tr>
+<tr>
+<td>最小ハードウェア</td>
+<td>Mac mini（~$500+）</td>
+<td>$10ボード</td>
+</tr>
+</tbody>
+</table>
+<h3 id="moltis">Moltis</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/moltis-org/moltis">moltis-org/moltis</a></p>
+<p>Fabien Penso 作。<strong>150,000行のRust</strong>（unsafe ブロック0件）で書かれたエンタープライズ向けフレームワーク。2,300+テスト、Prometheus/OpenTelemetry対応、8 TTS + 7 STT プロバイダによる音声I/O、MCP（stdio・HTTP/SSE）対応、15のライフサイクルフックを持つ。週複数回のリリースを維持する高い開発速度が特徴。</p>
+<h3 id="picoclaw">PicoClaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/sipeed/picoclaw">sipeed/picoclaw</a></p>
+<p>組み込みハードウェアメーカーのSipeedが<strong>1日で開発</strong>。Go製の単一バイナリで、$10のRISC-Vボード（Sipeed LicheeRV Nano）上でRAM 10MB以下で動作。コードベースの95%はAI生成。</p>
+<h3 id="nanobot">Nanobot</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/HKUDS/nanobot">HKUDS/nanobot</a></p>
+<p>香港大学コンピュータサイエンス学科発。<strong>Pythonで約4,000行</strong>。データサイエンティストやAI研究者がTypeScript/Rustへの文脈切り替えなしに使えるよう設計。MCP-nativeで最新研究手法の採用が早い。</p>
+<h3 id="tinyclaw">TinyClaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/warengonzaga/tinyclaw">warengonzaga/tinyclaw</a></p>
+<p><strong>約400行のシェルスクリプト</strong>で実装。Claude Code + tmux の組み合わせで動作し、WhatsApp対応、ハートビート監視、cron、自己修復機能を持つ。「OpenClaw の縮小版ではなく、完全に独立したプロダクト」と明示している。</p>
+<h3 id="mimiclaw">MimiClaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/memovai/mimiclaw">memovai/mimiclaw</a></p>
+<p><strong>$5のESP32-S3ボード</strong>上で動作する純粋C言語実装。Linux・Node.js・サーバーインフラ不要。USB電源とWiFiがあれば、Telegram経由でAIアシスタントとして機能する。GPIO・センサー・アクチュエータの制御も可能。</p>
+<p><strong>動作要件:</strong>
+- チップ: ESP32-S3 必須
+- Flash: 16MB 以上
+- PSRAM: 8MB 以上</p>
+<h3 id="zclaw">zclaw</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/tnm/zclaw">tnm/zclaw</a></p>
+<p>MimiClaw と近いコンセプトの別プロジェクト。<strong>888KB以下のファームウェア</strong>でESP32マイコン上で動作。タイムゾーン対応スケジューラ、GPIO制御、暗号化クレデンシャル保存に対応。Telegram または Webリレー経由で操作。</p>
+<p><strong>対応ボード:</strong> ESP32-C3, ESP32-S3, ESP32-C6（他のESP32バリアントも設定変更で対応可能）</p>
+<h3 id="mini-clawminiclaw">Mini-Claw（MiniClaw）</h3>
+<p><strong>リポジトリ</strong>: <a href="https://github.com/htlin222/mini-claw">htlin222/mini-claw</a></p>
+<p><strong>「API費用ゼロ」</strong>が最大の特徴。Claude Pro/Max または ChatGPT Plus のサブスクリプションを直接Telegramで利用できる軽量Telegramボット。バックエンドには Pi coding agent を使用し、セッションの永続化・自動圧縮、ファイル添付、レート制限、アクセス制御を実装。</p>
+<hr />
+<h2 id="4">4. 超軽量・組み込みハードウェア対応プロダクト</h2>
+<h3 id="esp32">マイコン（ESP32）で動くもの</h3>
+<table>
+<thead>
+<tr>
+<th>プロダクト</th>
+<th>ハードウェア</th>
+<th>言語</th>
+<th>ファームウェアサイズ</th>
+<th>特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MimiClaw</strong></td>
+<td>ESP32-S3（$5）</td>
+<td>C</td>
+<td>N/A</td>
+<td>純粋C、OSなし・Node.jsなし。USB電源+WiFiで動作。Telegram経由で操作。GPIO/センサー制御対応</td>
+</tr>
+<tr>
+<td><strong>zclaw</strong></td>
+<td>ESP32-C3/S3/C6（$5前後）</td>
+<td>C</td>
+<td>888KB以下</td>
+<td>タイムゾーン対応スケジューラ、GPIO制御、暗号化クレデンシャル保存。Telegram or Webリレー経由で操作</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sbcraspberry-pi">SBC（Raspberry Pi クラス）で動くもの</h3>
+<table>
+<thead>
+<tr>
+<th>プロダクト</th>
+<th>対応ハードウェア</th>
+<th>言語</th>
+<th>RAM使用量</th>
+<th>起動時間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>RISC-V SBC（$10）、Raspberry Pi Zero クラス、ARM64、x86</td>
+<td>Go</td>
+<td>&lt;10MB</td>
+<td>約1秒</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>$10 SBC、Raspberry Pi 等</td>
+<td>Rust</td>
+<td>&lt;5MB</td>
+<td>&lt;10ms</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td>$5ボード全般（静的バイナリ）</td>
+<td>Zig</td>
+<td>~1MB</td>
+<td>&lt;2ms</td>
+</tr>
+<tr>
+<td><strong>Autobot</strong></td>
+<td>低スペックLinuxマシン全般</td>
+<td>Crystal</td>
+<td>~5MB</td>
+<td>&lt;10ms</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>Raspberry Pi 等（Python動作環境があれば）</td>
+<td>Python</td>
+<td>~45MB</td>
+<td>中程度</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-m5stack">5. M5Stack での動作可否</h2>
+<h3 id="mimiclaw-zclaw">MimiClaw / zclaw の動作要件</h3>
+<table>
+<thead>
+<tr>
+<th>プロダクト</th>
+<th>チップ要件</th>
+<th>Flash</th>
+<th>PSRAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MimiClaw</strong></td>
+<td>ESP32-S3 必須</td>
+<td>16MB 以上</td>
+<td>8MB 以上</td>
+</tr>
+<tr>
+<td><strong>zclaw</strong></td>
+<td>ESP32-C3/S3/C6（無印も可）</td>
+<td>4MB 以上</td>
+<td>必須ではない</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m5stack">M5Stack 主要機種との対応表</h3>
+<table>
+<thead>
+<tr>
+<th>機種</th>
+<th>チップ</th>
+<th>Flash</th>
+<th>PSRAM</th>
+<th>MimiClaw</th>
+<th>zclaw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Core S3</strong></td>
+<td>ESP32-S3</td>
+<td>16MB</td>
+<td>8MB</td>
+<td><strong>◯</strong></td>
+<td><strong>◯</strong></td>
+</tr>
+<tr>
+<td><strong>Core2 / Core2 for AWS</strong></td>
+<td>ESP32（無印）</td>
+<td>16MB</td>
+<td>8MB</td>
+<td><strong>×</strong>（S3必須）</td>
+<td><strong>△</strong>（要確認）</td>
+</tr>
+<tr>
+<td><strong>Basic v2.6</strong></td>
+<td>ESP32（無印）</td>
+<td>16MB</td>
+<td>なし</td>
+<td><strong>×</strong></td>
+<td><strong>△</strong></td>
+</tr>
+<tr>
+<td><strong>Fire v2.7</strong></td>
+<td>ESP32（無印）</td>
+<td>16MB</td>
+<td>8MB</td>
+<td><strong>×</strong></td>
+<td><strong>△</strong></td>
+</tr>
+<tr>
+<td><strong>Tough</strong></td>
+<td>ESP32（無印）</td>
+<td>16MB</td>
+<td>8MB</td>
+<td><strong>×</strong></td>
+<td><strong>△</strong></td>
+</tr>
+<tr>
+<td><strong>StampS3</strong></td>
+<td>ESP32-S3</td>
+<td>8MB</td>
+<td>8MB</td>
+<td><strong>×</strong>（Flash不足）</td>
+<td><strong>◯</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意点:</strong> M5Stack の場合、LCD や電源 IC（AXP192 等）の初期化コードが必要になるケースがあるため、そのまま flash するだけでは動かない可能性がある。zclaw を Core2 等で試す場合は、ESP-IDF のターゲット設定変更とペリフェラル初期化の対応が必要。</p>
+<hr />
+<h2 id="6_1">6. 用途別選択ガイド</h2>
+<table>
+<thead>
+<tr>
+<th>目的</th>
+<th>推奨プロダクト</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最大のエコシステムと機能が欲しい</td>
+<td><strong>OpenClaw</strong></td>
+</tr>
+<tr>
+<td>セキュリティ・コンプライアンスが最優先</td>
+<td><strong>NanoClaw</strong></td>
+</tr>
+<tr>
+<td>低スペックハードウェア・エッジ展開</td>
+<td><strong>ZeroClaw</strong> / <strong>PicoClaw</strong></td>
+</tr>
+<tr>
+<td>エンタープライズ・音声I/O・可観測性</td>
+<td><strong>Moltis</strong></td>
+</tr>
+<tr>
+<td>Pythonエコシステムで完結させたい</td>
+<td><strong>Nanobot</strong></td>
+</tr>
+<tr>
+<td>API費用をゼロにしたい（サブスク活用）</td>
+<td><strong>Mini-Claw</strong></td>
+</tr>
+<tr>
+<td>$5のESP32マイコンで動かしたい</td>
+<td><strong>MimiClaw</strong> / <strong>zclaw</strong></td>
+</tr>
+<tr>
+<td>究極のミニマリズム</td>
+<td><strong>NullClaw</strong></td>
+</tr>
+<tr>
+<td>アジア系プラットフォーム（Feishu等）対応</td>
+<td><strong>MicroClaw</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7">7. 参考リソース</h2>
+<ul>
+<li><a href="https://github.com/rohitg00/awesome-openclaw">awesome-openclaw（rohitg00）</a> — エコシステム全体の包括的なキュレーションリスト</li>
+<li><a href="https://www.aimagicx.com/blog/openclaw-alternatives-comparison-2026">OpenClaw Alternatives Compared (AI Magicx)</a></li>
+<li><a href="https://itsfoss.com/openclaw-alternatives/">OpenClaw Alternatives for Raspberry Pi (It's FOSS)</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

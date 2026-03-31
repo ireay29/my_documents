@@ -1,0 +1,1357 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../github.com_htlin222_mini-claw/">
+      
+      
+        <link rel="next" href="../github.com_openclaw_openclaw/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>GitHub - memovai/mimiclaw: MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS. · GitHub - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-memovaimimiclaw-mimiclaw-run-openclaw-on-a-5-chip-no-oslinux-no-nodejs-no-mac-mini-no-raspberry-pi-no-vps-hardware-agents-os-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GitHub - memovai/mimiclaw: MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS. · GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crowdfunding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Crowdfunding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/crowdfunding_guide_pet_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ペット向けスマートトイレ×健康管理アプリ クラウドファンディング立ち上げガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent prompt
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agent prompt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/agent_prompt/cf_mentor_agent_prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功メンターAgent システムプロンプト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/agent_prompt/cf_mentor_agent_prompt_en/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Prompt: Crowdfunding Success Mentor Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/research/crowdfunding_comprehensive_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功の法則：完全保存版ガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../crowdfunding/research/crowdfunding_success_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クラウドファンディング成功事例と初心者向け成功のポイント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistics research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Logistics research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logistics_research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物流・運送業界 企業リサーチ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Openclaw research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Openclaw research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw エコシステム 調査資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github.com_htlin222_mini-claw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - htlin222/mini-claw: minimalism alternative of OpenClaw · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - memovai/mimiclaw: MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS. · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github.com_openclaw_openclaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - openclaw/openclaw: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github.com_rohitg00_awesome-openclaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub - rohitg00/awesome-openclaw · GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itsfoss.com_openclaw-alternatives_/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw Alternatives That You Can Run on Raspberry Pi Like Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../www.aimagicx.com_blog_openclaw-alternatives-comparison-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw Alternatives: NanoClaw, ZeroClaw, Moltis, and Every Competitor Compared (2026) | AI Magicx Blog | AI Magicx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reports
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reports/openclaw-ecosystem-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw エコシステム 類似OSSプロダクト調査レポート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="github-memovaimimiclaw-mimiclaw-run-openclaw-on-a-5-chip-no-oslinux-no-nodejs-no-mac-mini-no-raspberry-pi-no-vps-hardware-agents-os-github">GitHub - memovai/mimiclaw: MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS. · GitHub</h1>
+<p><strong>URL:</strong> https://github.com/memovai/mimiclaw</p>
+<hr />
+<p>Skip to content
+Navigation Menu
+Platform
+Solutions
+Resources
+Open Source
+Enterprise
+Pricing
+Sign in
+Sign up
+memovai
+/
+mimiclaw
+Public
+Notifications
+Fork 650
+ Star 4.6k
+Code
+Issues
+42
+Pull requests
+43
+Discussions
+Actions
+Projects
+Security
+Insights
+memovai/mimiclaw
+ main
+19 Branches
+2 Tags
+Code
+Folders and files
+Name    Last commit message Last commit date</p>
+<p>Latest commit
+crispyberry
+Merge pull request #152 from IRONICBo/feat/release-spiffs
+bb10ea0
+ · 
+History
+214 Commits</p>
+<p>.github</p>
+<p>feat: include spiffs.bin in release and switch console to USB-JTAG</p>
+<p>assets</p>
+<p>chore: remove display and rgb source trees</p>
+<p>docs</p>
+<p>feat: link onboarding guide in docs</p>
+<p>main</p>
+<p>Merge pull request #150 from wjc1207/fix/feishu-md</p>
+<p>scripts</p>
+<p>chore: macOS setup skips installed tools and brew failures</p>
+<p>skills/deploy</p>
+<p>feat: add deploy skill with build/flash guide and helper scripts</p>
+<p>spiffs_data</p>
+<p>feat: add built-in gpio-control skill for switch confirmation</p>
+<p>.gitignore</p>
+<p>chore: add feishu config defaults</p>
+<p>CMakeLists.txt</p>
+<p>feat: add skill verification CLI commands and preflash SPIFFS image</p>
+<p>CONTRIBUTING.md</p>
+<p>chore: move CONTRIBUTE.md to repo root as CONTRIBUTING.md</p>
+<p>LICENSE</p>
+<p>docs: add MIT license</p>
+<p>README.md</p>
+<p>Merge pull request #136 from memovai/docs/wifi-onboarding-ap-guide</p>
+<p>README_CN.md</p>
+<p>feat: add onboarding guide links</p>
+<p>README_JA.md</p>
+<p>feat: add onboarding guide links</p>
+<p>partitions.csv</p>
+<p>feat: add sdkconfig defaults, partition table, and global config</p>
+<p>sdkconfig.defaults</p>
+<p>fix: increase SPIFFS_OBJ_NAME_LEN to 64 for long session filenames</p>
+<p>sdkconfig.defaults.esp32s3</p>
+<p>feat: include spiffs.bin in release and switch console to USB-JTAG</p>
+<p>Repository files navigation
+README
+Contributing
+MIT license
+MimiClaw: Pocket AI Assistant on a $5 Chip</p>
+<p>English | 中文 | 日本語</p>
+<p>The world's first AI assistant(OpenClaw) on a $5 chip. No Linux. No Node.js. Just pure C</p>
+<p>MimiClaw turns a tiny ESP32-S3 board into a personal AI assistant. Plug it into USB power, connect to WiFi, and talk to it through Telegram — it handles any task you throw at it and evolves over time with local memory — all on a chip the size of a thumb.</p>
+<p>Meet MimiClaw
+Tiny — No Linux, no Node.js, no bloat — just pure C
+Handy — Message it from Telegram, it handles the rest
+Loyal — Learns from memory, remembers across reboots
+Energetic — USB power, 0.5 W, runs 24/7
+Lovable — One ESP32-S3 board, $5, nothing else
+How It Works</p>
+<p>You send a message on Telegram. The ESP32-S3 picks it up over WiFi, feeds it into an agent loop — the LLM thinks, calls tools, reads memory — and sends the reply back. Supports both Anthropic (Claude) and OpenAI (GPT) as providers, switchable at runtime. Everything runs on a single $5 chip with all your data stored locally on flash.</p>
+<p>Quick Start
+What You Need
+An ESP32-S3 dev board with 16 MB flash and 8 MB PSRAM (e.g. Xiaozhi AI board, ~$10)
+A USB Type-C cable
+A Telegram bot token — talk to @BotFather on Telegram to create one
+An Anthropic API key — from console.anthropic.com, or an OpenAI API key — from platform.openai.com
+Install</p>
+<h1 id="you-need-esp-idf-v55-installed-first">You need ESP-IDF v5.5+ installed first:</h1>
+<h1 id="httpsdocsespressifcomprojectsesp-idfenv552esp32s3get-started">https://docs.espressif.com/projects/esp-idf/en/v5.5.2/esp32s3/get-started/</h1>
+<p>git clone https://github.com/memovai/mimiclaw.git
+cd mimiclaw</p>
+<p>idf.py set-target esp32s3
+Ubuntu Install
+macOS Install
+Configure</p>
+<p>MimiClaw uses a two-layer config system: build-time defaults in mimi_secrets.h, with runtime overrides via the serial CLI. CLI values are stored in NVS flash and take priority over build-time values.</p>
+<p>cp main/mimi_secrets.h.example main/mimi_secrets.h</p>
+<p>Edit main/mimi_secrets.h:</p>
+<h1 id="define-mimi_secret_wifi_ssid-yourwifiname">define MIMI_SECRET_WIFI_SSID       "YourWiFiName"</h1>
+<h1 id="define-mimi_secret_wifi_pass-yourwifipassword">define MIMI_SECRET_WIFI_PASS       "YourWiFiPassword"</h1>
+<h1 id="define-mimi_secret_tg_token-123456abc-def1234ghikl-zyx57w2v1u123ew11">define MIMI_SECRET_TG_TOKEN        "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"</h1>
+<h1 id="define-mimi_secret_api_key-sk-ant-api03-xxxxx">define MIMI_SECRET_API_KEY         "sk-ant-api03-xxxxx"</h1>
+<h1 id="define-mimi_secret_model_provider-anthropic-anthropic-or-openai">define MIMI_SECRET_MODEL_PROVIDER  "anthropic"     // "anthropic" or "openai"</h1>
+<h1 id="define-mimi_secret_search_key-optional-brave-search-api-key">define MIMI_SECRET_SEARCH_KEY      ""              // optional: Brave Search API key</h1>
+<h1 id="define-mimi_secret_tavily_key-optional-tavily-api-key-preferred">define MIMI_SECRET_TAVILY_KEY      ""              // optional: Tavily API key (preferred)</h1>
+<h1 id="define-mimi_secret_proxy_host-optional-eg-10001">define MIMI_SECRET_PROXY_HOST      ""              // optional: e.g. "10.0.0.1"</h1>
+<h1 id="define-mimi_secret_proxy_port-optional-eg-7897">define MIMI_SECRET_PROXY_PORT      ""              // optional: e.g. "7897"</h1>
+<p>Then build and flash:</p>
+<h1 id="clean-build-required-after-any-mimi_secretsh-change">Clean build (required after any mimi_secrets.h change)</h1>
+<p>idf.py fullclean &amp;&amp; idf.py build</p>
+<h1 id="find-your-serial-port">Find your serial port</h1>
+<p>ls /dev/cu.usb<em>          # macOS
+ls /dev/ttyACM</em>          # Linux</p>
+<h1 id="flash-and-monitor-replace-port-with-your-port">Flash and monitor (replace PORT with your port)</h1>
+<h1 id="usb-adapter-likely-devcuusbmodem11401-macos-or-devttyacm0-linux">USB adapter: likely /dev/cu.usbmodem11401 (macOS) or /dev/ttyACM0 (Linux)</h1>
+<p>idf.py -p PORT flash monitor</p>
+<p>Important: Plug into the correct USB port! Most ESP32-S3 boards have two USB-C ports. You must use the one labeled USB (native USB Serial/JTAG), not the one labeled COM (external UART bridge). Plugging into the wrong port will cause flash/monitor failures.</p>
+<p>Show reference photo
+CLI Commands (via UART/COM port)</p>
+<p>Connect via serial to configure or debug. Config commands let you change settings without recompiling — just plug in a USB cable anywhere.</p>
+<p>Runtime config (saved to NVS, overrides build-time defaults):</p>
+<p>mimi&gt; wifi_set MySSID MyPassword   # change WiFi network
+mimi&gt; set_tg_token 123456:ABC...   # change Telegram bot token
+mimi&gt; set_api_key sk-ant-api03-... # change API key (Anthropic or OpenAI)
+mimi&gt; set_model_provider openai    # switch provider (anthropic|openai)
+mimi&gt; set_model gpt-4o             # change LLM model
+mimi&gt; set_proxy 127.0.0.1 7897  # set HTTP proxy
+mimi&gt; clear_proxy                  # remove proxy
+mimi&gt; set_search_key BSA...        # set Brave Search API key
+mimi&gt; set_tavily_key tvly-...      # set Tavily API key (preferred)
+mimi&gt; config_show                  # show all config (masked)
+mimi&gt; config_reset                 # clear NVS, revert to build-time defaults</p>
+<p>Debug &amp; maintenance:</p>
+<p>mimi&gt; wifi_status              # am I connected?
+mimi&gt; memory_read              # see what the bot remembers
+mimi&gt; memory_write "content"   # write to MEMORY.md
+mimi&gt; heap_info                # how much RAM is free?
+mimi&gt; session_list             # list all chat sessions
+mimi&gt; session_clear 12345      # wipe a conversation
+mimi&gt; heartbeat_trigger           # manually trigger a heartbeat check
+mimi&gt; cron_start                  # start cron scheduler now
+mimi&gt; restart                     # reboot</p>
+<p>USB (JTAG) vs UART: Which Port for What</p>
+<p>Most ESP32-S3 dev boards expose two USB-C ports:</p>
+<p>Port    Use for
+USB (JTAG)  idf.py flash, JTAG debugging
+COM (UART)  REPL CLI, serial console</p>
+<p>REPL requires the UART (COM) port. The USB (JTAG) port does not support interactive REPL input.</p>
+<p>Port details &amp; recommended workflow
+Memory</p>
+<p>MimiClaw stores everything as plain text files you can read and edit:</p>
+<p>File    What it is
+SOUL.md The bot's personality — edit this to change how it behaves
+USER.md Info about you — name, preferences, language
+MEMORY.md   Long-term memory — things the bot should always remember
+HEARTBEAT.md    Task list the bot checks periodically and acts on autonomously
+cron.json   Scheduled jobs — recurring or one-shot tasks created by the AI
+2026-02-05.md   Daily notes — what happened today
+tg_12345.jsonl  Chat history — your conversation with the bot
+Tools</p>
+<p>MimiClaw supports tool calling for both Anthropic and OpenAI — the LLM can call tools during a conversation and loop until the task is done (ReAct pattern).</p>
+<p>Tool    Description
+web_search  Search the web via Tavily (preferred) or Brave for current information
+get_current_time    Fetch current date/time via HTTP and set the system clock
+cron_add    Schedule a recurring or one-shot task (the LLM creates cron jobs on its own)
+cron_list   List all scheduled cron jobs
+cron_remove Remove a cron job by ID</p>
+<p>To enable web search, set a Tavily API key via MIMI_SECRET_TAVILY_KEY (preferred), or a Brave Search API key via MIMI_SECRET_SEARCH_KEY in mimi_secrets.h.</p>
+<p>Cron Tasks</p>
+<p>MimiClaw has a built-in cron scheduler that lets the AI schedule its own tasks. The LLM can create recurring jobs ("every N seconds") or one-shot jobs ("at unix timestamp") via the cron_add tool. When a job fires, its message is injected into the agent loop — so the AI wakes up, processes the task, and responds.</p>
+<p>Jobs are persisted to SPIFFS (cron.json) and survive reboots. Example use cases: daily summaries, periodic reminders, scheduled check-ins.</p>
+<p>Heartbeat</p>
+<p>The heartbeat service periodically reads HEARTBEAT.md from SPIFFS and checks for actionable tasks. If uncompleted items are found (anything that isn't an empty line, a header, or a checked - [x] box), it sends a prompt to the agent loop so the AI can act on them autonomously.</p>
+<p>This turns MimiClaw into a proactive assistant — write tasks to HEARTBEAT.md and the bot will pick them up on the next heartbeat cycle (default: every 30 minutes).</p>
+<p>Also Included
+WebSocket gateway on port 18789 — connect from your LAN with any WebSocket client
+OTA updates — flash new firmware over WiFi, no USB needed
+Dual-core — network I/O and AI processing run on separate CPU cores
+HTTP proxy — CONNECT tunnel support for restricted networks
+Multi-provider — supports both Anthropic (Claude) and OpenAI (GPT), switchable at runtime
+Cron scheduler — the AI can schedule its own recurring and one-shot tasks, persisted across reboots
+Heartbeat — periodically checks a task file and prompts the AI to act autonomously
+Tool use — ReAct agent loop with tool calling for both providers
+For Developers</p>
+<p>Technical details live in the docs/ folder:</p>
+<p>docs/ARCHITECTURE.md — system design, module map, task layout, memory budget, protocols, flash partitions
+docs/TODO.md — feature gap tracker and roadmap
+docs/WIFI_ONBOARDING_AP.md — how the local MimiClaw-XXXX onboarding/admin AP flow works
+docs/tool-setup/ — configuration guides for external service integrations (Tavily, etc.)
+Contributing</p>
+<p>Please read CONTRIBUTING.md before opening issues or pull requests.</p>
+<p>Contributors</p>
+<p>Thanks to everyone who has contributed to MimiClaw.</p>
+<p>License</p>
+<p>MIT</p>
+<p>Acknowledgments</p>
+<p>Inspired by OpenClaw and Nanobot. MimiClaw reimplements the core AI agent architecture for embedded hardware — no Linux, no server, just a $5 chip.</p>
+<p>Star History
+About</p>
+<p>MimiClaw: Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS.</p>
+<p>mimiclaw.io
+Topics
+ai memory assistant edge-ai-agents clawdbot openclaw
+Resources
+ Readme
+License
+ MIT license
+Contributing
+ Contributing
+ Activity
+ Custom properties
+Stars
+ 4.6k stars
+Watchers
+ 41 watching
+Forks
+ 650 forks
+Report repository</p>
+<p>Releases 2
+v0.1.1
+Latest
++ 1 release</p>
+<p>Packages
+No packages published</p>
+<p>Contributors
+7</p>
+<p>Languages
+C
+96.6%</p>
+<p>Shell
+3.0%</p>
+<p>CMake
+0.4%
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
