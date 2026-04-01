@@ -1,0 +1,4 @@
+interface:
+  display_name: "MkDocs Docs Maintainer"
+  short_description: "新規ドキュメント追加時にREADMEとnavを同期する"
+  default_prompt: "Use $mkdocs-docs-maintainer to add or update documents in a MkDocs repo and synchronize README.md, docs/index.md, and mkdocs.yml."
